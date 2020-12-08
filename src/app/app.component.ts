@@ -1,4 +1,4 @@
-import { Component, VERSION } from '@angular/core';
+import { Component, HostListener,  VERSION } from '@angular/core';
 
 @Component({
   selector: 'my-app',
@@ -6,5 +6,11 @@ import { Component, VERSION } from '@angular/core';
   styleUrls: [ './app.component.css' ]
 })
 export class AppComponent  {
-  name = 'Angular ' + VERSION.major;
+ 
+  @HostListener('window:scroll') onEventHandler()
+  {
+    console.log('scrolling not allowed');
+  }
+
+
 }
