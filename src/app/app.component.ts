@@ -9,8 +9,7 @@ export class AppComponent  {
  
   @HostListener('window:scroll') onEventHandler()
   {
-    console.log('scrolling not allowed');
+    console.log('scrolling not allowed'); 
   }
-
 
 }
