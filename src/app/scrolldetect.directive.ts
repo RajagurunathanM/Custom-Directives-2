@@ -1,16 +1,17 @@
-import { Directive } from '@angular/core';
+import { Directive, HostListener} from '@angular/core';
 
 @Directive({
-  selector:'scrolldetect',
+  selector:'[scrolldetect]',
 })
 export class ScrollDirective
 {
-  constructor()
-  {
-    // @HostListener('window:scroll')
-    // {
-    //   console.log('scrolling not allowed'); 
-    // }
-  }
+    consturctor()
+    { 
+    }
 
+    @HostListener("window:scroll",['$event']) 
+    onWindowScroll(event)
+    {
+      console.log('scrolling not allowed'); 
+    }
 }
