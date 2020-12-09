@@ -8,7 +8,7 @@ export class ScrollDirective
     consturctor()
     { 
     }
-
+ 
     @HostListener('window:scroll') 
     onWindowScroll()
     {
