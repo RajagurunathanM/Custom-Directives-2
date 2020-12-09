@@ -9,8 +9,8 @@ export class ScrollDirective
     { 
     }
 
-    @HostListener("window:scroll",['$event']) 
-    onWindowScroll(event)
+    @HostListener('window:scroll') 
+    onWindowScroll()
     {
       console.log('scrolling not allowed'); 
     }
